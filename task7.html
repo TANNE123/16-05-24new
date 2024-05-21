@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+      #parent_div {
+        position: relative;
+        width: 100%;
+        height: 800px;
+      }
+      nav {
+        position: sticky;
+        top: 0%;
+        display: flex;
+        /* justify-content: space-between; */
+        
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+        top: 0;
+        position: sticky;
+      }
+      nav > span{
+        float: left;
+        padding-right: 5%;
+      }
+      #parent_div img {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        z-index: -1;
+        top: -1px;
+        transition: 0.8s;
+      }
+      #parent_div #los {
+        position: absolute;
+        bottom: 18%;
+        left: 46%;
+        z-index: -1;
+        font-size: 30px;
+        color: white;
+        display: block;
+      }
+      #parent_div #playing {
+        position: absolute;
+        bottom: 12%;
+        left: 39%;
+        z-index: -1;
+        font-size: 20px;
+        color: white;
+        display: block;
+      }
+      #parent_div1 {
+        position: relative;
+        width: 100%;
+        height: 300px;
+       margin-bottom: 150px;
+
+      }
+      #parent_div1 #band {
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        font-size: 40px;
+      }
+      #parent_div1 #love {
+        position: absolute;
+        top: 40%;
+        left: 48%;
+        font-size: 20px;
+        font-style: italic;
+        font-family: "Lato", sans-serif;
+        opacity: 0.5;
+      }
+      #parent_div1 #pera{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 700px;
+        height: 200px;
+        font-family: "Lato", sans-serif;
+        text-align: justify;
+      }
+      
+        
+     
+      #names_images{
+        display: flex;
+        justify-content:center ;
+        gap: 100px;
+        text-align: center;
+        font-size: 20px;
+        
+      }
+      #tour_dates{
+        display: flex;
+        width: 100%;
+        height: 900px;
+        background-color: black;
+        position: relative;
+
+      }
+      #tour_dates #tour{
+        position: absolute;
+        top:10%;
+        left: 43%;
+        color: white;
+        font-size: 38px;
+        font-family:"Lato", sans-serif ;
+
+      }
+      #tour_dates #tickets{
+        position: absolute;
+        top:15% ;
+        left: 44%;
+        font-family:"Lato", sans-serif ;
+        font-style: italic;
+        opacity: 0.6;
+        color: white;
+      }
+      #tour_dates #table{
+       position: absolute;
+        display: grid;
+        grid-template-columns: repeat(1,700px);
+        grid-template-rows: repeat(3,50px);
+        background-color: white;
+       top: 20%;
+       left: 30%;
+         
+      }
+      mark{
+        background-color: red;
+      }
+      #table span{
+        border-bottom: 0.4px solid rgb(219, 216, 216);
+        padding: 10px;
+      }
+      #anchar a{
+        float:right;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+      }
+      #tour_dates #newyork{
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        width: 700px;
+        height: 500px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+
+      }
+      #tour_dates #newyork div{
+        border: 2px solid;
+        width: 300px;
+        height: 500px;
+        padding: 15px;
+      }
+      button{
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        margin-left: 10px;
+      }
+      .CONTACT{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        /* border: 3px solid red; */
+      }
+      .CONTACT #call{
+        font-size: 40px;
+        position: absolute;
+        top: 10%;
+        left: 47%;
+        
+      }
+      .CONTACT #note{
+        font-size: 20px;
+        font-family: "Lato", sans-serif ;
+        opacity: 0.5;
+        font-style: italic;
+        position: absolute;
+        top: 20%;
+        left: 48%;
+      }
+      .CONTACT .l{
+        position: absolute;
+        top: 45%;
+        left: 30%;
+      }
+      #us{
+        position: absolute;
+        top: 46%;
+        left: 32%;
+        font-size: 20px;
+        
+      }
+      .call{
+        position: absolute;
+        top: 53%;
+        left: 30%;
+      }
+      #phone{
+        position: absolute;
+        top: 53%;
+        left: 32%;
+        font-size: 20px;
+      }
+      .gmail{
+        position: absolute;
+        top: 60%;
+        left: 30%;
+      }
+      #mail{
+        position: absolute;
+        top: 60%;
+        left: 32%;
+        font-size: 20px;
+      }
+      
+      
+      .CONTACT #massage{
+        position: absolute;
+        top: 55%;
+        left: 55%;
+      }
+      .CONTACT #tname{
+        position: absolute;
+        top: 45%;
+        left: 55%;
+      }
+      .CONTACT #email{
+        position: absolute;
+        top: 45%;
+        left: 70%;
+      }
+      #tname input{
+        width: 120%;
+        height: 35px;
+      }
+      #email input{
+        width: 120%;
+        height: 35px;
+      }
+      #massage input{
+        width: 253%;
+        height: 35px;
+      }
+       .CONTACT #send{
+        position: absolute;
+        top: 70%;
+        left: 73%;
+       }
+       .ending_map img{
+        width: 100%;
+        height: 800px;
+        transition: 1s;
+       }
+       #footer{
+        width: 100%;
+        height: 200px;
+        border: 2px solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+       }
+       #footer >div{
+        padding-right: 5px;
+       }
+      
+      @media screen and (width < 600px) {
+        nav {
+        position: sticky;
+        top: 0%;
+        display: flex;
+        /* justify-content: space-between; */
+        
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+      }
+        #parent_div{
+            height: 400px;
+        }
+        #parent_div img {
+          position: absolute;
+          width: 100%;
+          height: 400px;
+          z-index: -1;
+          top: -1px;
+        }
+        #los {
+          display: none !important;
+        }
+        #parent_div #playing{
+            display: none !important;
+        }
+        #parent_div1 {
+          width: 100%;
+          height: 300px;
+          transition: 1s;
+          
+        }
+        
+        #parent_div1 #pera{
+            width: 100%;
+            height: 300px;
+            left: 0;
+            
+        }
+        #parent_div1 #band{
+            left: 5%;
+        }
+        #parent_div1 #love {
+            left: 5%;
+        }
+        #names_images{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        text-align: center;
+        font-size: 20px;
+        
+      }
+      #tour_dates{
+        width: 100%;
+        height: 2000px;
+        background-color: black;
+        
+
+      }
+      #tour_dates #tour{
+        top:2%;
+        left: 20%;
+        color: white;
+        font-size: 40px;
+        font-family:"Lato", sans-serif ;
+
+      }
+      #tour_dates #tickets{
+        top:5% ;
+        left: 22%;
+        font-family:"Lato", sans-serif ;
+        font-style: italic;
+        opacity: 0.6;
+        color: white;
+      }
+      #tour_dates #table{
+        display: grid;
+        grid-template-columns: repeat(1,350px);
+        grid-template-rows: repeat(3,50px);
+        background-color: white;
+       top: 10%;
+       left: 5%;
+         
+      }
+      #tour_dates #newyork{
+        top: 20%;
+        left: 10%;
+        width: 250px;
+        height: 1500px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      }
+      .CONTACT .l{
+        top: 30%;
+        left: 0%;
+      }
+      #us{
+        top: 31%;
+        left: 7%;
+        font-size: 15px;
+      }
+      .call{
+        top: 37%;
+        left: 0%;
+      }
+      #phone{
+        top: 38%;
+        left: 7%;
+        font-size: 15px;
+      }
+      .gmail{
+        top: 43%;
+        left: 0%;
+      }
+      #mail{
+        top: 44%;
+        left: 7%;
+        font-size: 15px;
+      }
+      /* .CONTACT #call{
+        left: 28%;
+      } */
+      /* .CONTACT #note{
+        left: 30%;
+      } */
+      .CONTACT #tname {
+        top: 50%;
+        left: 1%;
+        width: 50% !important;
+    }
+    .CONTACT #email{
+        top: 60%;
+        left: 1%;
+        width: 50%;
+    }
+    .CONTACT #massage{
+      top: 70%;
+      left: 1%;
+      width: 24% !important;
+    }
+    .CONTACT #send{
+      top: 80%;
+      left: 50%;
+    }
+    .ending_map img{
+        width: 100%;
+        height: 200px;
+       }
+      
+  }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span>HOME</span> <span>BAND</span> <span>TOUR</span>
+      <span>CONTACT</span> <span>MORE</span>
+    </nav>
+    <div id="parent_div">
+      
+      <img src="https://www.w3schools.com/w3images/la.jpg" />
+      <span id="los">Los Angeles</span>
+      <span id="playing">We had the best time playing at Venice Beach!</span>
+    </div>
+    <div id="parent_div1">
+        <span id="band">THE BAND</span>
+        <span id="love">We love music</span>
+        <p id="pera">
+        We have created a fictional band website. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+     </div>
+     <div id="names_images">
+        <div id="name_img1">name <br><br><img src="https://www.w3schools.com/w3images/bandmember.jpg"></div>
+        
+        <div id="name_img2">name <br><br><img src="https://www.w3schools.com/w3images/bandmember.jpg"></div>
+       
+        <div id="name_img3">name <br><br><img src="https://www.w3schools.com/w3images/bandmember.jpg"></div>
+        
+      </div>
+     <div id="tour_dates">
+        <span id="tour">TOUR DATES</span>
+        <span id="tickets">Remember to book your tickets!</span>
+        <div id="table">
+          <span>September <mark>Sold out</mark> </span>
+          <span>October <mark>Sold out</mark></span>
+          <span id="anchar">November <a>3</a></span>
+        </div>
+        <div id="newyork">
+          <div>
+            <img src="https://www.w3schools.com/w3images/newyork.jpg" width="200px" height="300px">
+            <br><span><b>New York </b><br> Fri 27 Nov 2016 <br> Praesent tincidunt sed tellus ut <br> rutrum sed vitae justo.</span> <br> <br>
+            <button>Buy Tickets</button>
+          </div>
+          <div>
+            <img src="https://www.w3schools.com/w3images/paris.jpg" width="200px" height="300px">
+            <br><span><b>Paris </b><br>Sat 28 Nov 2016 <br>Praesent tincidunt sed tellus ut <br> rutrum sed vitae justo.</span><br> <br>
+            <button>Buy Tickets</button>
+          </div>
+          <div>
+            <img src="https://www.w3schools.com/w3images/sanfran.jpg" width="200px" height="300px"><br>
+            <span><b>San Francisco</b> <br> Sun 29 Nov 2016 <br> Praesent tincidunt sed tellus ut rutrum sed vitae justo.</span><br><br>
+            <button>Buy Tickets</button>
+          </div>
+        </div> 
+      </div>
+    </div>
+</div>
+  <!--contact-->
+          <div class="CONTACT">
+            <div id="call">CONTACT</div>
+            <div id="note">Fan? Drop a note!</div>
+            <span class="material-symbols-outlined l">
+               location_on   
+            </span>
+           
+            <span id="us">
+              Chicago, US
+            </span>
+              <span class="material-symbols-outlined call">
+                call
+              </span>
+                <span id="phone"> 
+                  Phone: +00 151515
+                </span>
+              <span class="material-symbols-outlined gmail">
+                  mail
+                  </span>
+              <span id="mail">
+                  Email: mail@mail.com
+              </span>
+          
+            <span id="tname"><input type="text" placeholder="Name">
+            </span>
+            <span id="email"><input type="text" placeholder="Email"></span>
+            <span id="massage"><input type="text" placeholder="Massage"></span>
+            <span id="send"><button>SEND</button></span> 
+          </div>
+    <div class="ending_map">
+      <img src="https://www.w3schools.com/w3images/map.jpg">
+    </div>
+    <div>
+      
+    </div>
+    <div id="footer">
+      <div><img src="./facebook.png" width="30px"></div>
+      <div><img src="./instagram.png" width="30px"></div>
+      <div><img src="./snapchat.png" width="30px"></div>
+      <div><img src="./path.png" width="30px"></div>
+      <div><img src="./twitter.png" width="30px"></div>
+      <div><img src="./linkedin-big-logo.png" width="30px"></div>
+      <span>Powered by</span>
+      <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+
+
+
+    </div>
+  </body>
+</html>

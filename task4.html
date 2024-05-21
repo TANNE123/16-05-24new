@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #third_3{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        'div div1 div2 div3';
+       
+      }
+      #div{
+        grid-area: div;
+      }
+      #div1{
+        grid-area: div1;
+      }
+      #div2{
+        grid-area: div2;
+      }
+      #div3{
+        grid-area: div3;
+      }
+     
+      img {
+        width: 150px;
+        height: 150px;
+        
+
+      }
+      #div,#div1,#div2,#div3,
+      h1,
+      p {
+        width: 300px;
+      }
+      #div ,#div1, #div2,#div3{
+        margin: 20px 20px 20px 20px;
+        border: 2px solid;
+      }
+      @media screen and (width < 480px)  {
+        #third_3{
+         grid-template-columns: repeat(1,1fr);
+         grid-template-rows: repeat(8,1fr);
+         grid-template-areas: 
+         'div'
+         'div1'
+         'div2'
+         'div3';
+      }
+      /* #div, #div1,#div2,#div3
+      h1,
+      p {
+        width: 300px;
+      }
+      #div img {
+        width: 150px;
+        height: 150px;
+        
+      }
+      #div {
+        margin: 20px 20px 20px 20px;
+        
+      }
+         */
+      }
+      
+    </style>
+</head>
+<body>
+    <div id="third_3">
+        <div id="div">
+            <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" />
+            <h1>WD 2TB Elements Portable External Hard Drive - USB 3.0</h1>
+            <p>
+              USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC
+              Performance High Capacity; Compatibility Formatted NTFS for Windows
+              10, Windows 8.1, Windows 7; Reformatting may be required for other
+              operating systems; Compatibility may vary depending on user’s hardware
+              configuration<br />
+              <br />price": 64
+            </p>
+            <button>BUY</button>
+          </div>
+          <div id="div1">
+            <img src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" />
+            <h1>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h1>
+            <p>
+              Easy upgrade for faster boot up, shutdown, application load and
+              response (As compared to 5400 RPM SATA 2.5” hard drive; Based on
+              published specifications and internal benchmarking tests using PCMark
+              vantage scores) Boosts burst write performance, making it ideal for
+              <br />
+              <br />
+              price: 109
+            </p>
+            <button>BUY</button>
+          </div>
+          <div id="div2">
+            <img src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" />
+            <h1>
+              Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA
+              III 2.5
+            </h1>
+            <p>
+              3D NAND flash are applied to deliver high transfer speeds Remarkable
+              transfer speeds that enable faster bootup and improved overall system
+              performance. The advanced SLC Cache Technology allows <br />
+              <br />price: 109,
+            </p>
+            <button>BUY</button>
+          </div>
+          <div id="div3">
+            <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" />
+            <h1>
+              WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard
+              Drive
+            </h1>
+            <p>
+              Expand your PS4 gaming experience, Play anywhere Fast and easy, setup
+              Sleek design with high capacity, 3-year manufacturer's limited
+              warrantyExpand your PS4 gaming experience, Play anywhere Fast and
+              <br /><br />price: 114
+            </p>
+            <button>BUY</button>
+          </div>
+          
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #second_2{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        'div div1 div2 div3';
+       
+      }
+      #div{
+        grid-area: div;
+      }
+      #div1{
+        grid-area: div1;
+      }
+      #div2{
+        grid-area: div2;
+      }
+      #div3{
+        grid-area: div3;
+      }
+     
+      img {
+        width: 150px;
+        height: 150px;
+        
+
+      }
+      #div,#div1,#div2,#div3,
+      h1,
+      p {
+        width: 300px;
+      }
+      #div ,#div1, #div2,#div3{
+        margin: 20px 20px 20px 20px;
+        border: 2px solid;
+      }
+      @media screen and (width < 480px)  {
+        #second_2{
+          
+         grid-template-columns: repeat(1,1fr);
+         grid-template-rows: repeat(8,1fr);
+         grid-template-areas: 
+         'div'
+         'div1'
+         'div2'
+         'div3';
+      }
+      #div, #div1,#div2,#div3
+      h1,
+      p {
+        width: 300px;
+       
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        
+      }
+      #div, #div1, #div2,#div3 {
+        margin: 20px 20px 20px 20px;
+        
+      }
+        
+      }
+      
+    </style>
+</head>
+<body>
+    <div id="second_2">
+        <div id="div">
+            <img
+              src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+            />
+            <h1>
+              John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain
+              Bracelet
+            </h1>
+            <p>
+              From our Legends Collection, the Naga was inspired by the mythical
+              water dragon that protects the ocean's pearl. Wear facing inward to be
+              bestowed with love and abundance, or outward for protection.
+              <br /><br /><br />price": 695
+            </p>
+            <button>BUY</button>
+          </div>
+          <div id="div1">
+            <img
+              src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+            />
+            <h1>Solid Gold Petite Micropave</h1>
+            <br /><br /><br />
+            <p>
+              Satisfaction Guaranteed. Return or exchange any order within 30
+              days.Designed and sold by Hafeez Center in the United States.
+              Satisfaction Guaranteed. Return or exchange any order within 30
+              <br /><br />
+              <br />price: 168
+            </p>
+            <button>BUY</button>
+          </div>
+          <div id="div2">
+            <img
+            src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg""
+            >
+            <h1>White Gold Plated Princess</h1>
+            <br /><br />
+            <p>
+              Classic Created Wedding Engagement Solitaire Diamond Promise Ring for
+              Her. Gifts to spoil your love more for Engagement, Wedding,
+              Anniversary, Valentine's Day...Classic Created Wedding Engagement
+              Solitaire Diamond Promise Ring for Her. . <br /><br />price: 9.99
+            </p>
+            <button>BUY</button>
+          </div>
+          <div id="div3"> 
+            <img
+              src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+            />
+            <h1>Pierced Owl Rose Gold Plated Stainless Steel Double</h1>
+            <p>
+              Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L
+              Stainless SteelRose Gold Plated Double Flared Tunnel Plug Earrings.
+              Made of 316L Stainless SteelRose Gold Plated Double Flared Tunnel Plug
+              Earrings. Made of 316L Stainless Steel <br /><br /><br />price: 10.99
+            </p>
+            <button>BUY</button>
+          </div>
+          
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div img {
+        width: 100px;
+        height: 200px;
+      }
+      @media screen and (width < 500px) {
+        #parent_div {
+          display: grid;
+          grid-template-columns: repeat(3, 100px);
+          grid-template-rows: repeat(8, 200px);
+        }
+        #first_2 {
+          grid-column: 1/2;
+        }
+        #second_2 {
+          grid-column: 2/3;
+        }
+        #third_3 {
+          grid-column: 1/2;
+        }
+        #fourth_4 {
+          grid-column: 2/3;
+        }
+        #fiveth_5 {
+          grid-column: 1/2;
+        }
+        #sixth_6 {
+          grid-column: 2/3;
+        }
+        #seventh_7 {
+          grid-column: 1/2;
+        }
+        #eight_8 {
+          grid-column: 2/3;
+        }
+      }
+      @media screen and (width > 500px) and (width < 1500px) {
+        div img{
+          width: 250px;
+          height: 250px;
+        }
+        #parent_div{
+          display: grid;
+          grid-template-columns: repeat(5, 250px);
+          grid-template-rows: repeat(4, 250px);
+        }
+        #first_1 {
+          grid-column: 1/2;
+        }
+        #second_2 {
+          grid-column: 2/3;
+        }
+        #third_3 {
+          grid-column: 3/4;
+        }
+        #fourth_4 {
+          grid-column: 4/5;
+        }
+        #fiveth_5 {
+          grid-column: 1/2;
+          
+        }
+        #sixth_6 {
+          grid-column: 2/3;
+          
+        }
+        #seventh_7{
+          grid-column: 3/4;
+        }
+        #eight_8{
+          grid-column: 4/5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent_div">
+      <div id="first_1">
+        <img
+          src="https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg"
+        />
+      </div>
+      <div id="second_2">
+        <img
+          src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlM19jdXRlX2NhdF9kcmVhbXlfd2FsbHBhcGVyX2NhcnRvb25faWxsdWlzdHJhdGlvbl9lOTg2ZGQ0NC04Njk0LTQ1MTYtODk5MS1lNjRkYzRlNTYxZjZfMS5qcGc.jpg"
+        />
+      </div>
+      <div id="third_3">
+        <img
+          src="https://wallpaper.forfun.com/fetch/b4/b4d430320229744245679e19e50b6f03.jpeg"
+        />
+      </div>
+
+      <div id="fourth_4">
+        <img
+          src="https://r1.ilikewallpaper.net/iphone-wallpapers/download/27124/Paris-Night-France-City-Dark-Eiffel-Tower-iphone-wallpaper-ilikewallpaper_com_200.jpg"
+        />
+      </div>
+
+      <div id="fiveth_5">
+        <img
+          src="https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg"
+        />
+      </div>
+      <div id="sixth_6">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi3hzfro5CSpU5oWzv3HerS94tY8mG_9D_P6dbyKaqZw&s"
+        />
+      </div>
+
+      <div id="seventh_7">
+        <img
+          src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        />
+      </div>
+      <div id="eight_8">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFNchKpl5OWu1hcOYDQnHSxpqEQFomfz0NBHV3vDakgg&s"
+        />
+      </div>
+    </div>
+  </body>
+</html>
